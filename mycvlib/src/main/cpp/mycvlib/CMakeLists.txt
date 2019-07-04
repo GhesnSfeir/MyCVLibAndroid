@@ -13,13 +13,13 @@ target_include_directories(mycvlib
             $<BUILD_INTERFACE:${MY_MAIN_SRC_DIR}>
         PRIVATE
             ${MY_MAIN_SRC_DIR}
-            /Users/ghesnsfeir/Programs/opencv410minimal/install/opencv/include/opencv4
+            $ENV{OPENCV_INCLUDE_DIR}
         )
 
 add_library(opencv-lib SHARED IMPORTED)
 set_target_properties(opencv-lib
         PROPERTIES IMPORTED_LOCATION
-        /Users/ghesnsfeir/Programs/OpenCV-android-sdk/sdk/native/libs/${ANDROID_ABI}/libopencv_java4.so)
+        $ENV{OPENCV_ANDROID_NATIVE_SHARED_LIBS_DIR})
 
 # Include libraries needed for hello-jni lib
 target_link_libraries(mycvlib
