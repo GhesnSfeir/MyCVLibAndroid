@@ -16,7 +16,7 @@ android {
         sourceSets {
             main {
                 jniLibs.srcDirs = [
-                        '/Users/ghesnsfeir/Programs/OpenCV-android-sdk/sdk/native/libs/'
+                        System.getenv("OPENCV_ANDROID_NATIVE_SHARED_LIBS_DIR")
                 ]
             }
         }
