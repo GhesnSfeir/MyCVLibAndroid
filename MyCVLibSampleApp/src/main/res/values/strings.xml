@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MyCVLibAndroid</string>
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="avg_intensity_label">Average Intensity: </string>
+    <string name="current_time_label">Current Time (ms): </string>
+    <string name="avg_time_label">Average Time (ms): </string>
+    <string name="intro_message">
+        <![CDATA[
+
+
+            This sample demonstrates the basic use of Camera2 API. Check the source code to see how
+            you can display camera preview and take pictures.
+
+
+        ]]>
+    </string>
+</resources>
